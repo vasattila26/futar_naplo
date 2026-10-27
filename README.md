@@ -7,8 +7,6 @@ Statikus, mobilbarát futárnyilvántartó. Nem igényel Flasket, szervert, regi
 - Műszakok: dátum, munkaidő, rendelések, borravaló nélküli bevétel, borravaló, kilométer és megjegyzés.
 - Kiadások: heti költség (7 naptári napra elosztva), havi költség (az adott hónap naptári napjaira elosztva), egyszeri költség (csak a kezdőnapon).
 - Napi/heti/havi/egyéni statisztika, teljes bevétel, költségek, nettó eredmény, munkaidő, kilométer és rendelésenkénti átlag.
-- JSON adatmentés és visszaállítás (a GPS-útvonalakat is tartalmazza).
-- Opcionális GPS-követés: kézzel indítható/leállítható, a napokra bontott útvonal helyi tárolása és térképes visszanézése.
 - Kék színvilágú, mobilra optimalizált kezelőfelület.
 - Offline használat a PWA első sikeres betöltése után, ha a böngésző megtartja a cache-t.
 
@@ -21,11 +19,7 @@ Statikus, mobilbarát futárnyilvántartó. Nem igényel Flasket, szervert, regi
 6. Várd meg a GitHub Pages telepítést; az URL a Pages oldalon fog megjelenni.
 7. Nyisd meg a címet HTTPS-en, majd iPhone-on Safari → Megosztás → **Főképernyőhöz adás**, Androidon Chrome menü → **Alkalmazás telepítése** / **Hozzáadás a kezdőképernyőhöz**.
 
-## GPS-követés – fontos
-- A GPS csak a **GPS indítása** gomb megnyomása után kér helyengedélyt; a követés nem kötelező.
 - A rögzített koordináták a böngésző helyi tárhelyére kerülnek, és a JSON-mentésbe is bekerülnek. A mentés titkosítatlan.
-- A GPS csak HTTPS-en működik (GitHub Pages megfelelő). A böngészőnek engedélyezni kell a helyhozzáférést.
-- iPhone/iOS esetén a böngésző háttérbe tétele vagy a képernyő lezárása megszakíthatja/szüneteltetheti a GPS-rögzítést. Megbízható rögzítéshez tartsd nyitva az alkalmazást és a képernyőt. A PWA nem garantál háttérben folyamatos követést.
 - A térképes visszanézéshez internet kell; a pontok helyben tárolódnak.
 
 ## Adatvédelem – fontos
